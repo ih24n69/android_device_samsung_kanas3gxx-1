@@ -1,0 +1,1 @@
+# android_device_samsung_kanas3gxx-1
