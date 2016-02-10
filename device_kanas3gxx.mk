@@ -52,14 +52,14 @@ PRODUCT_PACKAGES += \
 
 # wifi config
 PRODUCT_COPY_FILES += \
-	device/samsung/kanas3gxx/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
-	device/samsung/kanas3gxx/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf\
-    device/samsung/kanas3gxx/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf
+	device/samsung/kanas3gxx/config/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
+	device/samsung/kanas3gxx/config/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf\
+    device/samsung/kanas3gxx/wifi/config/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf
 
 # Bluetooth config
 PRODUCT_COPY_FILES += \
-	device/samsung/kanas3gxx/bluetooth/bt_did.conf:system/etc/bluetooth/bt_did.conf \
-	device/samsung/kanas3gxx/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
+	device/samsung/kanas3gxx/config/bluetooth/bt_did.conf:system/etc/bluetooth/bt_did.conf \
+	device/samsung/kanas3gxx/config/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
 
 # Bluetooth
 PRODUCT_PACKAGES += \
