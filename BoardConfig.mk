@@ -28,6 +28,9 @@ TARGET_BOARD_PLATFORM := sc8830
 TARGET_BOOTLOADER_BOARD_NAME := sc7735s
 BOARD_VENDOR := samsung
 
+# Odex file no create
+DISABLE_DEXPREOPT := true
+
 BOARD_KERNEL_CMDLINE := init=/sbin/init root=/dev/ram rw initrd=0x11000000,16M console=ttyDCC0 mem=88M
 BOARD_KERNEL_PAGESIZE := 4096
 
