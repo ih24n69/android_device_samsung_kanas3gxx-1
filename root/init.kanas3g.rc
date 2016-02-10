@@ -1,0 +1,22 @@
+import init.kanas3g_base.rc
+import init.wifi.rc
+
+
+on fs
+# Support Preload install apks
+     mkdir /preload 0771 system system
+
+	wait /dev/block/platform/sprd-sdhci.3/by-name/HIDDEN
+    mount ext4 /dev/block/platform/sprd-sdhci.3/by-name/HIDDEN /preload nosuid nodev ro barrier=1
+    setprop storage.preload.complete 1
+
+# for BT-PANU
+service dhcpcd_bt-pan /system/bin/dhcpcd -BKL
+    class main
+    disabled
+    oneshot
+
+service iprenew_bt-pan /system/bin/dhcpcd -n
+    class main
+    disabled
+    oneshot

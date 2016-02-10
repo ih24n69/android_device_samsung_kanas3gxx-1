@@ -1,0 +1,3 @@
+add_lunch_combo kanas3gxx-userdebug
+add_lunch_combo kanas3gxx-eng
+add_lunch_combo cm_kanas3gxx-userdebug
