@@ -32,7 +32,6 @@
       A storage should not have both emulated and removable set to true
 -->
 
-<StorageList xmlns:android="http://schemas.android.com/apk/res/android">
     <StorageList xmlns:android="http://schemas.android.com/apk/res/android">
 	<storage
 		android:storageDescription="@string/storage_internal"
@@ -45,5 +44,4 @@
 		android:primary="false"
 		android:removable="true"
 		android:maxFileSize="4096" />
-</StorageList>
 </StorageList>
