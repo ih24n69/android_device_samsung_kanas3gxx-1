@@ -110,7 +110,7 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charging
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := kanas3g,SM-G355H,kanas3gxx
+TARGET_OTA_ASSERT_DEVICE := kanas,SM-G355H,kanas3gxx,kanas3gnfc,kanas3gnfcxx
 
 
 DEVICE_RESOLUTION := 480x800
