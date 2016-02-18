@@ -141,7 +141,8 @@ on early-boot
 
 on boot
     chown system system /sys/class/backlight/sprd_backlight/brightness
-	chown system root /sys/class/camera/rear/rear_flash
+     chown system root /sys/class/camera/rear/rear_flash
+     chmod 0666 /sys/class/camera/rear/rear_flash
     chown system system /sys/devices/platform/scxx30-dmcfreq.0/devfreq/scxx30-dmcfreq.0/ondemand/set_enable
     chown system system /sys/devices/platform/scxx30-dmcfreq.0/devfreq/scxx30-dmcfreq.0/ondemand/set_upthreshold
     chown system system /sys/devices/platform/scxx30-dmcfreq.0/devfreq/scxx30-dmcfreq.0/ondemand/set_downdifferential
