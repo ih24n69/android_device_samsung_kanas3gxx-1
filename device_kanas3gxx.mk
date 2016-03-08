@@ -159,7 +159,6 @@ include frameworks/native/build/phone-hdpi-512-dalvik-heap.mk
 # we have enough storage space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
 
-$(call inherit-product, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/samsung/kanas3gxx/kanas3gxx-vendor.mk)
 
